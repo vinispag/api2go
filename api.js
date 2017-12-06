@@ -277,7 +277,7 @@ var API2Go = function(configSettings){
         apiObj.logger("The '{0}' email to {1} was succefully sent.".format(mailTemplate.subject, mailOptions.to), "INFO");
       }
 
-      callback((error ? true : false));
+      callback((error ? error : false));
     });
   };
 
